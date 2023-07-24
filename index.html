@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Validação</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h2>EXERCÍCIO DE VALIDAÇÃO DE VALORES</h2>
+    <h3 class="container1">EBAC</h3>
+    <div class="container">
+        <form id="myForm">
+            <label for="campoA">Valor A:</label>
+            <input type="number" id="campoA" name="campoA" required placeholder="Deve ser MENOR">
+
+            <label for="campoB">Valor B:</label>
+            <input type="number" id="campoB" name="campoB" required placeholder="Deve ser MAIOR">
+
+            <button type="button" onclick="validarValores()">Verificar</button>
+        </form>
+
+        <div id="resultado" class="alert" style="display: none;"></div>
+    </div>
+        <script src="./main.js"></script>
+    <footer>
+        <div class="container">
+            <p>
+                &copy; Uriel Fred - Todos os direitos reservados - 2023
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
